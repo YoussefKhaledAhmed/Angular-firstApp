@@ -1,0 +1,23 @@
+#about{
+    background-color: #1abc9c;
+}
+
+.about-text{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.line{
+    background-color: white;
+    height: 4px;
+    width: 100px;
+}
+
+.white-color{
+    color: white;
+}
+
+.img-size{
+    width: 20%;
+}

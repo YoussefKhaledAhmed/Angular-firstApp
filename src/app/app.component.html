@@ -1,0 +1,99 @@
+<nav id="navBarId" class="navbar navbar-expand-lg nav-custome-color p-4 position-fixed start-0 end-0">
+  <div class="container">
+    <a (click)="changeTitle('Home');toggleVisibility('home')" class="navbar-brand logo-text text-uppercase" href="#">start framework</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item nav-items-text me-3">
+          <a (click)="changeTitle('About');toggleVisibility('about');toggleBackground('about')" class="rounded nav-link active fw-bolder text-uppercase" aria-current="page" href="#">about</a>
+        </li>
+        <li class="nav-item nav-items-text me-3">
+          <a (click)="changeTitle('Portfolio');toggleVisibility('portfolio');toggleBackground('portfolio')" class="rounded nav-link fw-bolder active text-uppercase" aria-current="page" href="#">portfolio</a>
+        </li>
+        <li class="nav-item nav-items-text">
+          <a (click)="changeTitle('Contact');toggleVisibility('contact');toggleBackground('contact')" class="rounded nav-link fw-bolder active text-uppercase" aria-current="page" href="#">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar nav-place navbar-expand-lg nav-custome-color p-4">
+  <div class="container">
+    <a (click)="changeTitle('Home');toggleVisibility('home')" class="navbar-brand logo-text text-uppercase" href="#">start framework</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item nav-items-text">
+          <a (click)="changeTitle('About');toggleVisibility('about')" class="nav-link active fw-bolder text-uppercase" aria-current="page" href="#">about</a>
+        </li>
+        <li class="nav-item nav-items-text">
+          <a (click)="changeTitle('Portfolio');toggleVisibility('portfolio')" class="nav-link fw-bolder active text-uppercase" aria-current="page" href="#">portfolio</a>
+        </li>
+        <li class="nav-item nav-items-text">
+          <a (click)="changeTitle('Contact');toggleVisibility('contact')" class="nav-link fw-bolder active text-uppercase" aria-current="page" href="#">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<app-home *ngIf="HomeisVisible" [class]="{ 
+  'home-show-class': HomeisVisible,
+  'home-hide-class': !HomeisVisible 
+  }"></app-home>
+
+<app-about *ngIf="aboutisVisible" [class]="{ 
+  'about-show-class': aboutisVisible,
+  'about-hide-class': !aboutisVisible 
+  }"></app-about>
+
+<app-portfolio *ngIf="portfolioisVisible" [class]="{ 
+  'portfolio-show-class': portfolioisVisible,
+  'portfolio-hide-class': !portfolioisVisible 
+  }"></app-portfolio>
+
+<app-contact *ngIf="contactisVisible" [class]="{ 
+  'contact-show-class': contactisVisible,
+  'contact-hide-class': !contactisVisible 
+  }"></app-contact>
+
+<footer>
+  <div class="container pt-5 ps-5 pe-5 pb-3">
+    <div class="row">
+      <div class="footer-location mb-5 col-md-4 text-center">
+          <h3 class="text-uppercase white-color">location</h3>
+          <p class="white-color">2215 John Daniel Drive</p>
+          <p class="white-color">Clark, MO 65243</p>
+      </div>
+      <div class="footer-contact-info mb-5 col-md-4 text-center">
+          <h3 class="text-uppercase white-color">around the web</h3>
+          <div class="footer-social-media d-flex justify-content-center column-gap-2">
+              <div class="footer-icon">
+                  <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="footer-icon">
+                  <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="footer-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="footer-icon">
+                  <i class="fa-solid fa-globe"></i>
+              </div>
+          </div>
+      </div>
+      <div class="footer-about mb-5 col-md-4 text-center">
+          <h3 class="text-uppercase white-color">about freelancer</h3>
+          <p id="footer-p" class="white-color m-auto">Freelance is a free to use, licensed Bootstrap theme created by Route</p>
+      </div>  
+    </div>
+  </div>
+  <div class="footer-lowerPart white-color text-center p-3">
+    <p class="m-0">Copyright © Your Website 2021</p>
+  </div>
+</footer>

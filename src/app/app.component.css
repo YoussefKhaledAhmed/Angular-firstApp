@@ -1,0 +1,93 @@
+#navBarId{
+    z-index: 10;
+}
+
+.logo-text{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.nav-custome-color{
+    background-color: #2C3E50;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+    margin: 5px 0;
+}
+
+.nav-items-text{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-place{
+    visibility: hidden;
+}
+
+/* classes to hide*/
+.home-hide-class{
+    display: none;
+}
+.about-hide-class{
+    display: none;
+}
+.portfolio-hide-class{
+    display: none;
+}
+.contact-hide-class{
+    display: none;
+}
+
+/* classes to show*/
+.home-show-class{
+    display: block;
+}
+.about-show-class{
+    display: block;
+}
+.portfolio-show-class{
+    display: block;
+}
+.contact-show-class{
+    display: block;
+}
+
+footer{
+    background-color: #2C3E50;
+}
+
+.footer-icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-lowerPart{
+    background-color: #1a252f;
+}
+
+.white-color{
+    color: white;
+}
+
+.navBar-background{
+    background-color: #1abc9ce6;
+}
+
+.navBar-background-none{
+    background-color: transparent;
+}
+
+#footer-p{
+    width: 90%;
+}
